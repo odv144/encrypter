@@ -79,9 +79,9 @@ const cambioModo = () => {
   let modo = document.getElementById("modo");
 
   if (modo.src.includes("moon")) {
-    modo.src = "/assets/sun.png";
+    modo.src = "./assets/sun.png";
   } else {
-    modo.src = "/assets/moon.png";
+    modo.src = "./assets/moon.png";
   }
   document.body.classList.toggle("dark-mode");
 };
