@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="icon" href="/assets/candado.png" />
+    <title>Encriptador 🔓</title>
+  </head>
+
+  <body class="container">
+    <header class="header">
+      <img src="/assets/Logo.png" alt="logo" />
+
+      <h1>Proteccion de cadenas</h1>
+      <div class="modo">
+        <img
+          id="modo"
+          src="/assets/moon.png"
+          alt="modo"
+          onclick="cambioModo()"
+        />
+      </div>
+    </header>
+
+    <main>
+      <section class="main" id="principal">
+        <div id="frase">
+          <textarea
+            name="ingreso"
+            id="ingreso"
+            placeholder="Ingrese el texto aqui"
+          ></textarea>
+        </div>
+        <div class="botones">
+          <button id="encriptar" class="btn btn-encrip">Encriptar</button>
+          <button class="btn btn-desencrip">Desencriptar</button>
+        </div>
+      </section>
+
+      <section class="asider">
+        <div class="result">
+          <h3>Texto encriptado</h3>
+          <span id="resultado"></span>
+        </div>
+        <button class="btn btn-copiar clonar">Copiar</button>
+        <img class="logoG" src="/assets/Muneco.png" alt="" />
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul>
+        <li>Virili Omar Dario</li>
+        <li>Argentina</li>
+        <li>Challenge Encriptador 2024</li>
+      </ul>
+    </footer>
+    <script src="/assets/script.js"></script>
+  </body>
+</html>
