@@ -11,8 +11,8 @@
   --input-border: #000000;
   --input-fondo: rgba(192, 235, 243, 0.28);
   --footer: rgba(94, 204, 255, 0.486);
-  --title: #343294;
-  --title-shadow: #2b0123;
+  --title: #0e0bc5;
+  --title-shadow: #78fbffe2;
 }
 .dark-mode {
   --fondo: #000811d2;
@@ -44,7 +44,7 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
   color: var(--title);
-  text-shadow: 3px 3px var(--title-shadow);
+  text-shadow: 2px 2px 25px var(--title-shadow);
 }
 header {
   margin-top: 5%;
@@ -52,6 +52,16 @@ header {
   display: flex;
   justify-content: space-evenly;
   gap: 2%;
+}
+header h1{
+  animation: 2s infinite alternate-reverse slideout; 
+}
+@keyframes slideout {
+  from { transform: translateX(0);
+        rotate: y 180deg;
+  }
+  to { transform: translateX(-100px); }
+
 }
 
 header img {
@@ -125,12 +135,14 @@ main {
   background-color: var(--fondo);
   backdrop-filter: blur(11.5px);
   font-size: 1.1rem;
-
   width: 100%;
   padding: 15px;
-
   min-height: 250px;
 }
+#principal div#frase textarea:focus {
+  box-shadow: -2px -2px 5px 3px rgb(251, 251, 251);
+}
+
 .asider > img {
   width: 50%;
   margin-left: 25%;
@@ -166,12 +178,18 @@ footer ul li {
   display: inline-block;
   min-width: 100px;
 }
+.btn:hover {
+  background-color: #0d8a2a;
+  color:#0014f0;
+  border-color: beige;
+  box-shadow: 3px 3px 12px 5px rgba(153, 255, 178, 0.2);
+}
 button.clonar {
   width: 40%;
   margin-left: 30%;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 890px) {
   .container {
     width: 100vw;
 
@@ -180,13 +198,28 @@ button.clonar {
   }
   header h1{
     font-size: 2rem;
+    animation: 3s infinite alternate slidein;
+  }
+  @keyframes slidein {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+      color: #00c3ff;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
   }
   header img {
     width: 25%;
     height: 25%;
   }
+ 
 
   main {
+   
     flex-direction: column;
     justify-content: center;
    
@@ -194,6 +227,16 @@ button.clonar {
   .main{
    margin: 0;
    width: 90%;
+  }
+  .modo{
+    padding: 1%;
+  }
+  .modo:hover{
+    rotate:y 360deg ;
+    transition:rotate 2s;
+      
+    };
+    
   }
   .asider{
    display: flex;
@@ -206,5 +249,11 @@ button.clonar {
   footer {
     display: flex;
    position:relative;
+  justify-content: center;
+  }
+  footer ul{
+   
+    width: '100%';
+    text-align: 'center';
   }
 }
