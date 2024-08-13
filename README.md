@@ -1,8 +1,10 @@
 
+![Alura](https://app.aluracursos.com/assets/images/logos/logo-aluraespanhol.svg)
+![Oracle](https://cdn2.gnarususercontent.com.br/6/449886/e4621638-6168-4948-a623-76dcfdefd99c.png)
 # Encryptador de texto
 
 Este proyecto encara un encriptador de texto para un challenge de Alura Latam en su edición 2024.
-![Logo](https://i.postimg.cc/9MtJpYrh/Logo.png)
+
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
@@ -19,7 +21,7 @@ https://odv144.github.io/encrypter/
 ## Features
 
 - Cambio entre modo claro/oscuro
-- LAnimaciones
+- Animaciones
 - Diseño mobile y desktop
 
 
